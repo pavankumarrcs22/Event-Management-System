@@ -1,0 +1,74 @@
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+    overflow: hidden;
+  }
+  
+  .chat-window {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .user-msg {
+    text-align: right;
+    color: blue;
+  }
+  
+  .bot-msg {
+    text-align: left;
+    color: green;
+  }
+  
+  .bot-buttons button {
+    margin: 5px 5px 0 0;
+    padding: 5px 10px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  button {
+    width: 30%;
+    padding: 8px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  .hi-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hi-btn:hover {
+    background-color: #218838;
+  }
+  
+  .chatbot button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  

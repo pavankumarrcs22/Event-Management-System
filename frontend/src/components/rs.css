@@ -1,0 +1,110 @@
+.role-selection {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .role-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
+  }
+  
+  .role-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 200px;
+    margin-top: 20px; /* Margin for better spacing */
+  }
+  
+  .role-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .role-btn:focus {
+    outline: none; /* Remove the focus outline for better styling */
+  }
+  
+  .venue-options {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .venue-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .venue-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .back-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .back-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  /* Mobile and Tablet responsiveness */
+  @media (max-width: 768px) {
+    .role-buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .role-btn {
+      width: 90%; /* Make buttons take more width on smaller screens */
+      font-size: 1rem;
+    }
+  
+    .venue-btn {
+      width: 90%;
+    }
+  
+    .back-btn {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .role-btn {
+      font-size: 0.9rem;
+      padding: 12px 20px;
+    }
+  
+    .venue-btn {
+      font-size: 0.9rem;
+      padding: 12px 20px;
+    }
+  
+    .back-btn {
+      font-size: 0.9rem;
+      padding: 12px 20px;
+    }
+  }
+  

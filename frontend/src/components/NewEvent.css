@@ -1,0 +1,279 @@
+/* Overall form container */
+.new-event-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Form title */
+.new-event-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form group for input fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input styling */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Search button */
+.new-event-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.new-event-form button:hover {
+    background-color: #0056b3;
+}
+/* Venues List */
+.venues-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* Remove default bullet points */
+.venues-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Grid layout */
+    gap: 15px;
+}
+
+/* Venue card */
+.venue-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.venue-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.venue-card h4 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.venue-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* View More button */
+.venue-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.venue-card button:hover {
+    background-color: #218838;
+}
+
+/* Expanded Details */
+.expanded-details {
+    background: #e9ecef;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .new-event-form {
+        padding: 20px;
+    }
+
+    .new-event-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-group input {
+        font-size: 1rem;
+    }
+
+    .venues-list h3 {
+        font-size: 1.3rem;
+    }
+
+    .venue-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .venue-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-event-form {
+        padding: 15px;
+    }
+
+    .new-event-form h2 {
+        font-size: 1.6rem;
+    }
+
+    .venue-card {
+        padding: 15px;
+    }
+
+    .venue-card h4 {
+        font-size: 1.1rem;
+    }
+}
+
+.expanded-details {
+    background: #e9ecef;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .expanded-details h4 {
+    margin-top: 10px;
+  }
+  
+  .expanded-details input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .expanded-details button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .expanded-details button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rating-section {
+    margin-top: 10px;
+  }
+  
+  .rating-section select {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  .rating-section button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .rating-section button:hover {
+    background-color: #0056b3;
+  }
+  .suggestions-list {
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    width: 300px; /* Match input width */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .suggestions-list li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  

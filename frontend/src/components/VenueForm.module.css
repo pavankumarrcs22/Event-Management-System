@@ -1,0 +1,108 @@
+/* Full Black Page Background */
+body {
+    background: url('https://source.unsplash.com/random/1920x1080/?event,party') no-repeat center center fixed;
+    background-size: cover;
+    color: black; /* Ensure text is readable */
+    font-family: Arial, sans-serif;
+}
+
+/* Form Container - Semi-Transparent Black */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: whitesmoke; /* Transparent Black */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft glow effect */
+    border-radius: 10px;
+    text-align: center;
+    color: black; /* Ensure text inside the form is visible */
+    backdrop-filter: blur(5px); /* Adds a glass effect */
+}
+
+/* Form Layout */
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+/* Input & Select Styling */
+input, select {
+   
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid black; /* White border */
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    color: black;
+    cursor: pointer;
+}
+
+/* Placeholder Color */
+input::placeholder, select {
+    color: black;
+}
+
+/* Focus Effect */
+input:focus, select:focus {
+    border-color: #00aaff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+/* Centered Button */
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+#p2{
+    background: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Slight enlargement effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .column {
+        width: 100%;
+    }
+}

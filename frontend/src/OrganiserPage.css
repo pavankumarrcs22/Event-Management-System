@@ -1,0 +1,77 @@
+.organizer-container {
+  text-align: center;
+  padding: 20px;
+  background-image: url("https://source.unsplash.com/1600x900/?event,concert");
+  background-size: cover;
+  color: white;
+}
+
+.venue-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.venue-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 200px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.venue-card h3 {
+  margin-bottom: 10px;
+}
+
+.venue-card button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.venue-card button:hover {
+  background-color: #0056b3;
+}
+
+.service-form {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  width: 300px;
+  margin: auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.service-form h2 {
+  color: white;
+}
+
+.service-form input,
+.service-form select,
+.service-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.service-form button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.service-form button:hover {
+  background-color: #218838;
+}

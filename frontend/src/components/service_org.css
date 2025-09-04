@@ -1,0 +1,105 @@
+/* Services Section */
+.services-page .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .services-page .services-block {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .services-page .services-block h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .services-page .services-block p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .services-page .services-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Call-to-Action Button */
+  .services-page button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .services-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .services-page button:focus {
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-page #services-background h1 {
+      font-size: 2.5rem;
+    }
+  
+    .services-page .services-content h2 {
+      font-size: 2rem;
+    }
+  
+    .services-page .services {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .services-page .services-block {
+      padding: 20px;
+    }
+  
+    .services-page button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-page #services-background h1 {
+      font-size: 2.2rem;
+    }
+  
+    .services-page .services-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .services-page .services {
+      grid-template-columns: 1fr;
+      gap: 20px; /* Increased gap for better spacing */
+    }
+  
+    .services-page .services-block {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .services-page button {
+      padding: 8px 18px;
+      font-size: 1rem;
+      margin-top: 20px; /* Ensure consistent spacing for button */
+    }
+  }
+  
